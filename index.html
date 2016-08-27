@@ -45,25 +45,28 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="vbox viewport">
+    <main class="hbox">
+        <section id="scout">
+            <section class="bg center">
+                <img class="logo" src="_img/scout-logo.png" alt="Scout Logo" />
+            </section>
+            <section class="screenshot center">
+                <img src="_img/screenshots/classic.png" alt="Screenshot of Scout" />
+            </section>
+        </section>
 
-    <section id="scout">
-        <img src="_img/scout.png" alt="Scout Logo" />
-        <img src="_img/screenshots/classic.png" alt="Screenshot of Scout" />
-    </section>
-
-    <section id="scout-app">
-        <img src="_img/scout-app.png" alt="Scout-App Logo" />
-        <img src="_img/screenshots/classic.png" alt="Screenshot of Scout-App" id="swap" />
-    </section>
+        <section id="scout-app">
+            <section class="bg center">
+                <img class="logo" src="_img/scout-app-logo.svg" alt="Scout-App Logo" />
+            </section>
+            <section class="screenshot center">
+                <img src="_img/screenshots/mac.png" alt="Screenshot of Scout-App" id="swap" />
+            </section>
+        </section>
+    </main>
 
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script type="text/javascript">
-      if (typeof jQuery == 'undefined') {
-          document.write(unescape("%3Cscript src='_scripts/jquery-2.2.3.min.js' type='text/javascript'%3E%3C/script%3E"));
-      }
-    </script> <!-- Load local jQuery if Google CDN is unreachable -->
     <script src="_scripts/crossbrowser.js"></script>
     <script src="_scripts/main.js"></script><!-- _js.main.js-->
 </body>
