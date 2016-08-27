@@ -42,6 +42,10 @@ function imgSize () {
     }
 }
 
-imgSize();
+$('img').on('load', function () {
+    imgSize();
+}).on('error', function() {
+    imgSize();
+});
 
 $(window).resize(imgSize);
