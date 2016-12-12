@@ -1,0 +1,66 @@
+
+// The main document, every page on the site refers to this basic document
+
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+html,
+body
+    +bmp0
+    width: 100%
+    height: 100%
+    font-family: sans-serif
+
+img
+    -ms-interpolation-mode: bicubic
+
+header,
+article
+    +bmp0
+
+.vbox
+    display: flex
+    flex-direction: column
+
+.hbox
+    display: flex
+    flex-direction: row
+
+a,
+header,
+article
+    display: flex
+    align-items: center
+    justify-content: center
+
+header,
+footer
+    height: 135px
+
+.main,
+article
+    flex: 1
+
+#scout
+    header
+        background-color: #333
+        background-image: url('../_img/grain-light.png'), linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0) 100px)
+        img
+            max-width: 100%
+            max-height: 90%
+    article
+        background-color: #A00
+        background-image: url('../_img/grain.png'), linear-gradient( rgba(0,0,0,0.25), rgba(0,0,0,0) 35%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.35))
+        border-top: 1px solid #C00
+        img
+            box-shadow: rgba(0,0,0,0.5) 0px 4px 10px, rgba(0,0,0,0.5) 0px 2px 5px
+
+#scout-app
+    header
+        background: #FFD255
+        a,
+        img
+            width: 90%
+            max-height: 100%
